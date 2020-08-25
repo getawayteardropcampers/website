@@ -1,19 +1,293 @@
-<head>
-<title>Getaway Teardrop Campers</title>
-<style>
-body{
-    font-family: arial, helvetica;
-    color: #333;
-    text-align: center;
-    padding: 30px;
-}
-img{
-    max-width: 300px;
-    margin: 13px auto;
-}
-</style>
-<body>
-    <img src="GTC-logo-sticker-green.png">
-<h1>Getaway Teardop Campers</h1>
-<h2>Website coming soon</h2>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Getawy Teardrop Campers</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/yff3hnn.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+    <link id="favicon" rel="icon" href="logo-green.png" />
+  </head>
+
+  <body>
+    <header class="text-center p-3">
+      <div>
+        <img src="images/hero.jpg" />
+        <a href="/"><img src="images/logo-border.png" /></a>
+      </div>
+    </header>
+    <main class="text-center my-5 reveal">
+      <div class="container">
+        <div class="intro">
+          <h1>Getaway Teardrop Campers</h1>
+          <h2>Custom made by Wes Farnham</h2>
+
+          <div class="video py-4 reveal">
+            <iframe
+              width="960"
+              height="540"
+              src="https://www.youtube.com/embed/DaJNpLahoZ4"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <h3 class="pb-2">Campers include the following features:</h3>
+          <ul>
+            <li>2700 x 1500 (body)</li>
+            <li>Chassis & Aframe made from Australian steel</li>
+            <li>
+              3 new wheels and tyres, (spare wheel supplied and fitted on wind
+              up holder underneath rear)
+            </li>
+            <li>Fibreglass lined</li>
+            <li>2 lockable doors with security screens</li>
+            <li>Roof hatch with 12 volt fan</li>
+            <li>2 x 12 volt usb charging points</li>
+            <li>1 x 12 volt power outlet</li>
+            <li>2 x 240 volt power points with safety switch</li>
+            <li>6 x led lights</li>
+            <li>Deep cycle battery</li>
+            <li>
+              Quality water tank fitted with 12v pressure pump and kitchen sink
+            </li>
+            <li>Lockable water inlet</li>
+            <li>Interior lined and insulated</li>
+            <li>2 pac painted kitchen doors, heavy duty drawer runners</li>
+            <li>4-inch foam mattress</li>
+            <li>Kings side awning with 12 v led light</li>
+            <li>Front toolbox made with matching fibreglass skin</li>
+            <li>Jockey wheel</li>
+            <li>Complete sprayed underneath with underbody stone guard</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <section class="container gallery">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <img
+            src="images/1.jpg"
+            onclick="openModal();currentSlide(1)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div class="col-12 col-md-3">
+          <img
+            src="images/2.jpg"
+            onclick="openModal();currentSlide(2)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div class="col-12 col-md-3">
+          <img
+            src="images/3.jpg"
+            onclick="openModal();currentSlide(3)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div class="col-12 col-md-3">
+          <img
+            src="images/4.jpg"
+            onclick="openModal();currentSlide(4)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div class="col-12 col-md-3">
+          <img
+            src="images/5.jpg"
+            onclick="openModal();currentSlide(5)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div class="col-12 col-md-3">
+          <img
+            src="images/6.jpg"
+            onclick="openModal();currentSlide(6)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div class="col-12 col-md-3">
+          <img
+            src="images/7.jpg"
+            onclick="openModal();currentSlide(7)"
+            class="hover-shadow cursor"
+          />
+        </div>
+        <div class="col-12 col-md-3">
+          <img
+            src="images/8.jpg"
+            onclick="openModal();currentSlide(8)"
+            class="hover-shadow cursor"
+          />
+        </div>
+      </div>
+    </section>
+
+    <div id="modal" class="modal-wrap">
+      <div class="modal-container">
+        <img class="logo" src="logo-green.png" />
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="images/1.jpg" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="images/2.jpg" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="images/3.jpg" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="images/4.jpg" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="images/5.jpg" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="images/6.jpg" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 9</div>
+          <img src="images/7.jpg" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 9</div>
+          <img src="images/8.jpg" />
+        </div>
+
+        <div class="nav">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openModal() {
+        document.getElementById("modal").style.display = "flex";
+      }
+
+      function closeModal() {
+        document.getElementById("modal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+
+    <a
+      class="fb"
+      href="https://www.facebook.com/GetawayTeardropCampers/"
+      target="_blank"
+    >
+      <span>
+        <img src="images/facebook.png" /> <br />View more on Facebook</span
+      >
+    </a>
+
+    <section class="contact reveal">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mt-5 pt-2 text-white">
+            <h4 class="pb-2">
+              For enquiries contact <br /><span
+                ><strong>Wes on 0439 388 015</strong></span
+              >
+              <br />or fill in the form below:
+            </h4>
+          </div>
+        </div>
+
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          class="col-sm-6 offset-md-3 py-3 my-3"
+        >
+          <div class="form-group">
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              placeholder="Name"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="message"
+              class="form-control"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <div class="form-group text-center">
+            <button class="btn btn-secondary" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p class="text-center mt-2">
+        © Getawy Teardrop Campers
+      </p>
+    </footer>
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
