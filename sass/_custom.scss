@@ -43,14 +43,17 @@ header {
   background: green;
   div {
     background-size: cover;
-    max-width: 1200px;
+    // max-width: 1200px;
     margin: auto;
     position: relative;
+    // padding: 15px;
     img {
-      width: 100%;
-      max-width: 1200px;
+      //   width: 100%;
+      //   max-width: 1200px;
+      height: calc(100vh - 30px);
+      margin: 15px auto;
     }
-    a {
+    .logo {
       //   background: green;
       display: block;
       position: absolute;
@@ -59,6 +62,35 @@ header {
       transform: translate(-50%, 0);
       img {
         max-width: 240px;
+        height: auto;
+      }
+    }
+  }
+  a {
+    background: green;
+
+    z-index: 9;
+    height: 48px;
+    width: 48px;
+    margin: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    text-align: center;
+    span {
+      transform: rotate(90deg);
+      display: block;
+      color: #ccc;
+      font-size: 30px;
+    }
+    &:hover {
+      text-decoration: none;
+      transition: all 0.3s;
+      span {
+        color: #fff;
       }
     }
   }
@@ -74,6 +106,10 @@ header {
     margin: 10px 0;
     display: inline-block;
   }
+}
+
+#intro {
+  outline: 0;
 }
 
 iframe {
