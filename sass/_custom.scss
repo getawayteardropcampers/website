@@ -46,12 +46,10 @@ header {
     // max-width: 1200px;
     margin: auto;
     position: relative;
-    // padding: 15px;
+    padding: 15px;
     img {
       //   width: 100%;
-      //   max-width: 1200px;
-      height: calc(100vh - 30px);
-      margin: 15px auto;
+      max-width: 100%;
     }
     .logo {
       //   background: green;
