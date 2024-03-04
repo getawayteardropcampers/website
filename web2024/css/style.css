@@ -1,0 +1,519 @@
+body {
+  background: white;
+  font-family: "arial", sans-serif;
+  color: #444;
+}
+
+h1,
+h3 {
+  font-family: railroad-gothic-atf, sans-serif;
+  color: teal;
+}
+
+h2 {
+  font-family: "Cortado", sans-serif;
+}
+
+a.fb {
+  color: #fff;
+  margin: auto;
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+  background: #444;
+  max-width: 200px;
+  border-radius: 8px;
+}
+a.fb span {
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 700;
+  display: block;
+}
+a.fb img {
+  width: 50px;
+  margin-bottom: 8px;
+}
+a.fb:hover {
+  color: #fff;
+  background: #333;
+}
+
+ul {
+  max-width: 460px;
+  padding: 0;
+  margin: auto;
+  text-align: left;
+}
+ul li {
+  padding: 4px 8px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+ul li img {
+  opacity: 0.5;
+  height: 16px;
+  width: 16px;
+  margin-right: 12px;
+}
+ul li:nth-child(odd) {
+  background: #eee;
+  border-radius: 3px;
+}
+ul li:nth-child(odd) img {
+  opacity: 0.6;
+}
+
+header div {
+  background: url(../images/sq-hero.jpg);
+  background-position: top center;
+  background-size: cover;
+  height: 600px;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  border-radius: 16px;
+  border: 12px solid #fff;
+}
+header .logo {
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+header .logo img {
+  max-width: 180px;
+  height: auto;
+  padding: 6px;
+  position: relative;
+  display: block;
+}
+header a {
+  background: teal;
+  z-index: 9;
+  height: 48px;
+  width: 48px;
+  margin: auto;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  text-align: center;
+}
+header a span {
+  transform: rotate(90deg);
+  display: block;
+  color: #ccc;
+  font-size: 30px;
+}
+header a:hover {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+header a:hover span {
+  color: #fff;
+}
+
+iframe {
+  border-radius: 16px;
+}
+
+.contact {
+  background-color: teal;
+  margin-top: 30px;
+}
+.contact h3 {
+  color: #fff;
+}
+.contact a {
+  color: #fff;
+  margin: 10px 0;
+  display: inline-block;
+}
+.contact a:hover {
+  color: #fff;
+}
+
+#intro {
+  outline: 0;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.gallery .col-12 {
+  text-align: center;
+}
+.gallery .col-12 img {
+  padding: 10px;
+  width: 100%;
+  border-radius: 16px;
+}
+
+/* The Modal (background) */
+.modal-wrap {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+  overflow: auto;
+  background-color: #fff;
+}
+.modal-wrap .logo {
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+  max-width: 100px;
+  background: #fff;
+  border-radius: 8px;
+}
+.modal-wrap img {
+  margin-bottom: 15px;
+}
+
+/* Modal Content */
+.modal-container {
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+}
+.modal-container img {
+  width: 100%;
+}
+
+/* The Close Button */
+.nav {
+  width: 100%;
+}
+
+.close {
+  color: #333;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 60px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #333;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body.hidden-scroll {
+  overflow: hidden;
+}
+
+.sl-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  display: none;
+  z-index: 1035;
+}
+
+.sl-wrapper {
+  z-index: 1040;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+}
+
+.sl-wrapper * {
+  box-sizing: border-box;
+}
+
+.sl-wrapper button {
+  border: 0 none;
+  background: transparent;
+  font-size: 28px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sl-wrapper button:hover {
+  opacity: 0.7;
+}
+
+.sl-wrapper .sl-close {
+  display: none;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  z-index: 10060;
+  margin-top: -14px;
+  margin-right: -14px;
+  height: 44px;
+  width: 44px;
+  line-height: 44px;
+  font-family: Arial, Baskerville, monospace;
+  color: #000;
+  font-size: 3rem;
+}
+
+.sl-wrapper .sl-counter {
+  display: none;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  z-index: 10060;
+  color: #000;
+  font-size: 1rem;
+}
+
+.sl-wrapper .sl-download {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+  z-index: 10060;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.sl-wrapper .sl-download a {
+  color: #fff;
+}
+
+.sl-wrapper .sl-navigation {
+  width: 100%;
+  display: none;
+}
+
+.sl-wrapper .sl-navigation button {
+  position: fixed;
+  top: 50%;
+  margin-top: -22px;
+  height: 44px;
+  width: 22px;
+  line-height: 44px;
+  text-align: center;
+  display: block;
+  z-index: 1000;
+  font-family: Arial, monospace;
+  color: #000;
+}
+
+.sl-wrapper .sl-navigation button.sl-next {
+  right: 5px;
+  font-size: 2rem;
+}
+
+.sl-wrapper .sl-navigation button.sl-prev {
+  left: 5px;
+  font-size: 2rem;
+}
+
+@media (min-width: 35.5em) {
+  .sl-wrapper .sl-navigation button {
+    width: 44px;
+  }
+  .sl-wrapper .sl-navigation button.sl-next {
+    right: 10px;
+    font-size: 3rem;
+  }
+  .sl-wrapper .sl-navigation button.sl-prev {
+    left: 10px;
+    font-size: 3rem;
+  }
+}
+@media (min-width: 50em) {
+  .sl-wrapper .sl-navigation button {
+    width: 44px;
+  }
+  .sl-wrapper .sl-navigation button.sl-next {
+    right: 20px;
+    font-size: 3rem;
+  }
+  .sl-wrapper .sl-navigation button.sl-prev {
+    left: 20px;
+    font-size: 3rem;
+  }
+}
+.sl-wrapper.sl-dir-rtl .sl-navigation {
+  direction: ltr;
+}
+
+.sl-wrapper .sl-image {
+  position: fixed;
+  touch-action: none;
+  z-index: 10000;
+}
+
+.sl-wrapper .sl-image img {
+  margin: 0;
+  padding: 0;
+  display: block;
+  border: 0 none;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+@media (min-width: 35.5em) {
+  .sl-wrapper .sl-image img {
+    border: 0 none;
+  }
+}
+@media (min-width: 50em) {
+  .sl-wrapper .sl-image img {
+    border: 0 none;
+  }
+}
+.sl-wrapper .sl-image iframe {
+  background: #000;
+  border: 0 none;
+}
+
+@media (min-width: 35.5em) {
+  .sl-wrapper .sl-image iframe {
+    border: 0 none;
+  }
+}
+@media (min-width: 50em) {
+  .sl-wrapper .sl-image iframe {
+    border: 0 none;
+  }
+}
+.sl-wrapper .sl-image .sl-caption {
+  display: none;
+  padding: 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sl-wrapper .sl-image .sl-caption.pos-top {
+  bottom: auto;
+  top: 0;
+}
+
+.sl-wrapper .sl-image .sl-caption.pos-outside {
+  bottom: auto;
+}
+
+.sl-spinner {
+  display: none;
+  border: 5px solid #333;
+  border-radius: 40px;
+  height: 40px;
+  left: 50%;
+  margin: -20px 0 0 -20px;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  width: 40px;
+  z-index: 1007;
+  animation: pulsate 1s ease-out infinite;
+}
+
+.sl-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+.sl-transition {
+  transition: transform ease 200ms;
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
