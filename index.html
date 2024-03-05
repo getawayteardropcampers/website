@@ -12,10 +12,13 @@
       content="Getaway Teardrop Campers are custom made in Goomboorian, Qld"
     />
     <link rel="stylesheet" href="https://use.typekit.net/yff3hnn.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="https://livejs.com/live.js"></script>
-    <link id="favicon" rel="icon" href="logo-green.png" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <link id="favicon" rel="icon" href="images/logo-2024.png" />
+    
+    <!-- development version, includes helpful console warnings -->
+    <script src=https://cdn.jsdelivr.net/npm/vue/dist/vue.js></script>
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -34,246 +37,113 @@
 
   <body>
     <header class="text-center">
+      
       <div>
-        <img src="images/hero.jpg" />
-        <span class="logo"><img src="images/logo-border.png" /></span>
-        <a href="#intro"><span>&#10095;</span></a>
+        <!-- <img src="images/sq-hero.jpg" /> -->
+        <span class="logo"><img src="images/logo-2024.png" /></span>
+        <!-- <a href="#intro"><span>&#10095;</span></a> -->
       </div>
     </header>
-    <main class="text-center my-5 reveal">
+    <main class="text-center my-5">
       <div class="container" id="intro">
         <div class="intro">
           <h1>Getaway Teardrop Campers</h1>
           <h2>Custom made by Wes Farnham</h2>
-
-          <div class="video py-4 reveal">
-            <iframe
-              width="960"
-              height="540"
-              src="https://www.youtube.com/embed/DaJNpLahoZ4"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-
-          <h3 class="pb-2">Campers include the following features:</h3>
-          <ul>
-            <li><img src="images/tick-green.png" /> 2700 x 1500 (body)</li>
-            <li>
-              <img src="images/tick-green.png" /> Chassis & Aframe made from
-              Australian steel
-            </li>
-            <li>
-              <img src="images/tick-green.png" />
-              3 new wheels and tyres, (spare wheel supplied and fitted on wind
-              up holder underneath rear)
-            </li>
-            <li><img src="images/tick-green.png" /> Fibreglass lined</li>
-            <li>
-              <img src="images/tick-green.png" /> 2 lockable doors with security
-              screens
-            </li>
-            <li>
-              <img src="images/tick-green.png" /> Roof hatch with 12 volt fan
-            </li>
-            <li>
-              <img src="images/tick-green.png" /> 2 x 12 volt usb charging
-              points
-            </li>
-            <li>
-              <img src="images/tick-green.png" /> 1 x 12 volt power outlet
-            </li>
-            <li>
-              <img src="images/tick-green.png" /> 2 x 240 volt power points with
-              safety switch
-            </li>
-            <li><img src="images/tick-green.png" /> 6 x led lights</li>
-            <li><img src="images/tick-green.png" /> Deep cycle battery</li>
-            <li>
-              <img src="images/tick-green.png" />
-              Quality water tank fitted with 12v pressure pump and kitchen sink
-            </li>
-            <li><img src="images/tick-green.png" /> Lockable water inlet</li>
-            <li>
-              <img src="images/tick-green.png" /> Interior lined and insulated
-            </li>
-            <li>
-              <img src="images/tick-green.png" /> 2 pac painted kitchen doors
-            </li>
-            <li><img src="images/tick-green.png" /> 4-inch foam mattress</li>
-            <li>
-              <img src="images/tick-green.png" /> One Kings side awning with 12
-              v led light
-            </li>
-            <li>
-              <img src="images/tick-green.png" /> Front toolbox made with
-              matching fibreglass skin
-            </li>
-            <li><img src="images/tick-green.png" /> Jockey wheel</li>
-            <li>
-              <img src="images/tick-green.png" /> Complete sprayed underneath
-              with underbody stone guard
-            </li>
-          </ul>
         </div>
       </div>
     </main>
 
-    <section class="container gallery">
-      <div class="row">
-        <div class="col-12 col-md-3">
-          <img
-            src="images/1.jpg"
-            onclick="openModal();currentSlide(1)"
-            class="hover-shadow cursor"
-          />
-        </div>
-        <div class="col-12 col-md-3">
-          <img
-            src="images/2.jpg"
-            onclick="openModal();currentSlide(2)"
-            class="hover-shadow cursor"
-          />
-        </div>
-        <div class="col-12 col-md-3">
-          <img
-            src="images/3.jpg"
-            onclick="openModal();currentSlide(3)"
-            class="hover-shadow cursor"
-          />
-        </div>
-        <div class="col-12 col-md-3">
-          <img
-            src="images/4.jpg"
-            onclick="openModal();currentSlide(4)"
-            class="hover-shadow cursor"
-          />
-        </div>
-        <div class="col-12 col-md-3">
-          <img
-            src="images/5.jpg"
-            onclick="openModal();currentSlide(5)"
-            class="hover-shadow cursor"
-          />
-        </div>
-        <div class="col-12 col-md-3">
-          <img
-            src="images/6.jpg"
-            onclick="openModal();currentSlide(6)"
-            class="hover-shadow cursor"
-          />
-        </div>
-        <div class="col-12 col-md-3">
-          <img
-            src="images/7.jpg"
-            onclick="openModal();currentSlide(7)"
-            class="hover-shadow cursor"
-          />
-        </div>
-        <div class="col-12 col-md-3">
-          <img
-            src="images/8.jpg"
-            onclick="openModal();currentSlide(8)"
-            class="hover-shadow cursor"
-          />
-        </div>
+    <section class="container gallery mb-5">
+      <h3 class="text-center">Squaredrop Model</h3>
+      <div class="video py-4 text-center">
+        <iframe
+        width="960"
+        height="540"
+        src="https://www.youtube.com/embed/SsN37ATI1_g"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      </div>
+      <div id="group-1" class="gallery row" >
+        <div class="col-12 col-md-3 group-1" v-for="group1 in group1">
+        <a v-bind:href="group1.img" class="big"><img v-bind:src="group1.img" alt="" title="" class="hover-shadow cursor" /></a>
+      </div> 
       </div>
     </section>
 
-    <div id="modal" class="modal-wrap">
-      <div class="modal-container">
-        <img class="logo" src="logo-green.png" />
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="mySlides">
-          <div class="numbertext">1 / 6</div>
-          <img src="images/1.jpg" />
-        </div>
+    <!-- // -----------
+    //  TEARDROP MODEL
+    // ----------- -->
 
-        <div class="mySlides">
-          <div class="numbertext">2 / 6</div>
-          <img src="images/2.jpg" />
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">3 / 6</div>
-          <img src="images/3.jpg" />
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">4 / 6</div>
-          <img src="images/4.jpg" />
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">5 / 6</div>
-          <img src="images/5.jpg" />
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">6 / 6</div>
-          <img src="images/6.jpg" />
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">7 / 9</div>
-          <img src="images/7.jpg" />
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">8 / 9</div>
-          <img src="images/8.jpg" />
-        </div>
-
-        <div class="nav">
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+    <section class="container gallery">
+      <h3 class="text-center">Teardrop Model</h3>
+      <div class="video py-4 text-center">
+        <iframe
+          width="960"
+          height="540"
+          src="https://www.youtube.com/embed/DaJNpLahoZ4"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
+      <div id="group-2" class="gallery row" >
+        <div class="col-12 col-md-3 group-2" v-for="group2 in group2">
+        <a v-bind:href="group2.img" class="big"><img v-bind:src="group2.img" alt="" title="" class="hover-shadow cursor" /></a>
+      </div> 
     </div>
+      
 
+          <!-- Scripts -->
     <script>
-      function openModal() {
-        document.getElementById("modal").style.display = "flex";
-      }
-
-      function closeModal() {
-        document.getElementById("modal").style.display = "none";
-      }
-
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        var captionText = document.getElementById("caption");
-        if (n > slides.length) {
-          slideIndex = 1;
+      var app1 = new Vue({
+      el: '#group-1',
+        data: {
+            group1: [
+            { img: 'images/sq-hero.jpg',},
+            { img: 'images/sq-2.jpg', },
+            { img: 'images/sq-3.jpg', },
+            { img: 'images/sq-4.jpg', },
+            { img: 'images/sq-5.jpg', },
+            { img: 'images/sq-6.jpg', },
+            { img: 'images/sq-8.jpg', },
+            { img: 'images/sq-9.jpg', }
+            ]
         }
-        if (n < 1) {
-          slideIndex = slides.length;
+        });
+      var app2 = new Vue({
+      el: '#group-2',
+        data: {
+            group2: [
+            { img: 'images/1.jpg',},
+            { img: 'images/2.jpg', },
+            { img: 'images/3.jpg', },
+            { img: 'images/4.jpg', },
+            { img: 'images/5.jpg', },
+            { img: 'images/6.jpg', },
+            { img: 'images/7.jpg', },
+            { img: 'images/8.jpg', }
+            ]
         }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        captionText.innerHTML = dots[slideIndex - 1].alt;
-      }
-    </script>
+        });
+      </script>
+    </section>
+ 
+
+    <section class="container">
+      <h3 class="pb-2 text-center mt-5">Optional Upgrades:</h3>
+      <ul>
+        <li><img src="images/tick-teal.png" /> 2nd awning & brackets</li>
+        <li><img src="images/tick-teal.png" /> Kings shower tent and poles</li>
+        <li><img src="images/tick-teal.png" /> 100 aph lithium battery</li>
+        <li><img src="images/tick-teal.png" /> 175 watt solar panel</li>
+        <li><img src="images/tick-teal.png" /> 12 volt victron power board</li>
+        <li><img src="images/tick-teal.png" /> 2nd side table track</li>
+        <li><img src="images/tick-teal.png" /> 30 litre engel drawer fridge</li>
+        <li><img src="images/tick-teal.png" /> Sirocco fan</li>
+      </ul>
+    </section>
 
     <a
       class="fb"
@@ -285,14 +155,12 @@
       >
     </a>
 
-    <section class="contact reveal">
+    <section class="contact" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center mt-5 pt-2 text-white">
             <h4 class="pb-2">
-              For all enquiries contact <br /><span
-                ><strong>Wes on 0439 388 015</strong></span
-              >
+              For enquiries contact <br /><strong><a href="tel:0439 388 015">Wes on  0439 388 015</a></strong>
               <br />or fill in the form below:
             </h4>
           </div>
@@ -304,7 +172,7 @@
           data-netlify="true"
           class="col-sm-6 offset-md-3 py-3 my-3"
         >
-          <div class="form-group">
+          <div class="form-group mb-2">
             <input
               type="text"
               name="name"
@@ -312,7 +180,7 @@
               placeholder="Name"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group mb-2">
             <input
               type="email"
               name="email"
@@ -320,7 +188,7 @@
               placeholder="Email"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group mb-4">
             <textarea
               name="message"
               class="form-control"
@@ -336,7 +204,14 @@
     <footer>
       <p class="text-center mt-2">© Getaway Teardrop Campers</p>
     </footer>
-    <!-- Scripts -->
+
+
     <script src="js/scripts.js"></script>
+    <script>
+      (function() {
+          var $gallery = new SimpleLightbox('.group-1 a', {});
+          var $gallery2 = new SimpleLightbox('.group-2 a', {});
+    })();
+    </script>
   </body>
 </html>
